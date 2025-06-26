@@ -22,7 +22,7 @@ const Sidebar = ({ visible }) => {
 
 	return (
 		<div
-			className={`py-4 pl-4 transition-all duration-300 ease-in-out ${
+			className={`py-8 pl-4 transition-all duration-300 ease-in-out ${
 				visible ? "w-[300px]" : "w-20 flex items-center flex-col"
 			} space-y-8 `}
 		>
