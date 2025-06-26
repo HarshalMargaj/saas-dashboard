@@ -1,4 +1,4 @@
-import { Bell, Moon } from "lucide-react";
+import { Bell, Moon, Sidebar } from "lucide-react";
 import React from "react";
 import Tooltip from "./Tooltip";
 
@@ -7,12 +7,14 @@ const navbarIcons = [
 	{ id: 2, icon: <Bell size={20} />, name: "Notifications" },
 ];
 
-const Navbar = () => {
+const Navbar = ({ visible, setVisible }) => {
+	const toggleSidebar = () => {
+		setVisible(!visible);
+	};
+
 	return (
 		<div className="h-16 px-4 border-b border-neutral-200 flex items-center justify-between bg-white">
-			<h1 className="text-2xl font-bold text-blue-500">
-				Admin Dashboard
-			</h1>
+			<Sidebar className="cursor-pointer" onClick={toggleSidebar} />
 			<div className="flex items-center gap-4">
 				{navbarIcons.map(icon => (
 					<div
