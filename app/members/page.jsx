@@ -1,7 +1,12 @@
+import Table from "./_components/Table";
 import React from "react";
 
 const page = () => {
-	return <div>members page</div>;
+	return (
+		<div>
+			<Table />
+		</div>
+	);
 };
 
 export default page;

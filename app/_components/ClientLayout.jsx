@@ -8,7 +8,7 @@ const ClientLayout = ({ children }) => {
 	const [sidebarVisible, setSidebarVisible] = useState(true);
 
 	return (
-		<div className="flex min-h-screen">
+		<div className="flex h-[775px]">
 			<Sidebar visible={sidebarVisible} setVisible={setSidebarVisible} />
 			<div className="flex flex-col flex-1 m-4 bg-white border border-neutral-200 rounded-md overflow-hidden">
 				<Navbar
