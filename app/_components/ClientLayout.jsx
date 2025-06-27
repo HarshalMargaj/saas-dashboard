@@ -10,7 +10,7 @@ const ClientLayout = ({ children }) => {
 	return (
 		<div className="flex h-screen">
 			<Sidebar visible={sidebarVisible} setVisible={setSidebarVisible} />
-			<div className="flex flex-col flex-1 m-4 bg-white border border-neutral-200 rounded-md overflow-hidden">
+			<div className="flex flex-col flex-1 m-4 bg-white border border-neutral-200 rounded-2xl overflow-hidden">
 				<Navbar
 					visible={sidebarVisible}
 					setVisible={setSidebarVisible}

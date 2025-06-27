@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"roleName": "Owner",
+		"textColor": "text-red-600",
+		"bgColor": "bg-red-100"
+	},
+	{
+		"id": 2,
+		"roleName": "Admin",
+		"textColor": "text-purple-600",
+		"bgColor": "bg-purple-100"
+	},
+	{
+		"id": 3,
+		"roleName": "Moderator",
+		"textColor": "text-blue-600",
+		"bgColor": "bg-blue-100"
+	},
+	{
+		"id": 4,
+		"roleName": "Member",
+		"textColor": "text-green-600",
+		"bgColor": "bg-green-100"
+	},
+	{
+		"id": 5,
+		"roleName": "Bot",
+		"textColor": "text-yellow-600",
+		"bgColor": "bg-yellow-100"
+	},
+	{
+		"id": 6,
+		"roleName": "Guest",
+		"textColor": "text-gray-600",
+		"bgColor": "bg-gray-100"
+	},
+	{
+		"id": 7,
+		"roleName": "Muted",
+		"textColor": "text-zinc-600",
+		"bgColor": "bg-zinc-100"
+	},
+	{
+		"id": 8,
+		"roleName": "VIP",
+		"textColor": "text-pink-600",
+		"bgColor": "bg-pink-100"
+	},
+	{
+		"id": 9,
+		"roleName": "Support",
+		"textColor": "text-indigo-600",
+		"bgColor": "bg-indigo-100"
+	},
+	{
+		"id": 10,
+		"roleName": "Streamer",
+		"textColor": "text-orange-600",
+		"bgColor": "bg-orange-100"
+	}
+]

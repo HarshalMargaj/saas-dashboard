@@ -1,7 +1,8 @@
 import React from "react";
+import Roles from "./_components/Roles";
 
 const page = () => {
-	return <div>roles page</div>;
+	return <Roles />;
 };
 
 export default page;
