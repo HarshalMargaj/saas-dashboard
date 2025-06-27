@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Cards = () => {
 	return (
-		<div className="flex gap-2">
+		<div className="flex gap-4">
 			{metrics.map(metric => (
 				<Card key={metric.id} metric={metric} />
 			))}
