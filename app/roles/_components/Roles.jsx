@@ -5,7 +5,7 @@ import ToggleSwitch from "./ToggleSwitch";
 
 const Roles = () => {
 	return (
-		<div className="space-y-4 w-1/2">
+		<div className="space-y-4  w-full md:w-1/2">
 			<h1 className="text-3xl text-gray-700 font-bold mb-4">Roles</h1>
 			{roles.map(role => (
 				<div
