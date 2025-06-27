@@ -1,7 +1,7 @@
 "use client";
 
-import { Loader, Search } from "lucide-react";
-import React, { useState, useEffect, useRef } from "react";
+import { Loader } from "lucide-react";
+import React, { useState, useEffect } from "react";
 import TableNav from "./TableNav";
 import TableRow from "./TableRow";
 
