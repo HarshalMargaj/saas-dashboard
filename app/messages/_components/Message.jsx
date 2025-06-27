@@ -10,7 +10,7 @@ const Message = ({ message }) => {
 		<div
 			onMouseEnter={() => setVisible(true)}
 			onMouseLeave={() => setVisible(false)}
-			className="flex items-center justify-between py-2 px-4 border-b border-neutral-100 hover:bg-blue-50"
+			className="flex items-center justify-between py-2 px-4 border-b border-neutral-100 hover:bg-blue-50 md:text-sm text-xs"
 		>
 			<div className="flex items-center gap-2">
 				<img
@@ -29,8 +29,12 @@ const Message = ({ message }) => {
 				</div>
 			</div>
 
+			<button className="md:hidden text-red-500 cursor-pointer border border-red-500 rounded-md p-1 text-xs">
+				<Trash size={10} />
+			</button>
+
 			{visible && (
-				<button className=" text-red-500 cursor-pointer border border-red-500 rounded-md p-1 text-xs">
+				<button className="hidden md:block text-red-500 cursor-pointer border border-red-500 rounded-md p-1 text-xs">
 					Delete
 				</button>
 			)}
