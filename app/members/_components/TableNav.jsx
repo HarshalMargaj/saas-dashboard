@@ -44,11 +44,11 @@ const TableNav = ({
 				ref={searchRef}
 			>
 				<div className="flex  items-center gap-2  text-gray-700">
-					<div>Filter: </div>
+					<div className="text-xs md:text-sm">Filter: </div>
 					<div className="relative" ref={dropdownRef}>
 						<div
 							onClick={() => setIsVisible(true)}
-							className="border border-neutral-100 rounded-md p-2 w-[150px] text-gray-500"
+							className="border border-neutral-100 rounded-md p-2 w-[150px] text-gray-500 text-xs md:text-sm"
 						>
 							{selectedRole || "Select role..."}
 						</div>
