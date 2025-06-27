@@ -105,71 +105,76 @@ const Table = () => {
 				setSelectedRole={setSelectedRole}
 				roles={roles}
 			/>
-			<table className="min-w-full table-auto text-sm text-left">
-				<thead className=" text-gray-700 font-semibold border-b border-neutral-100">
-					<tr>
-						{headers.map(header => (
-							<th
-								onClick={
-									header.key === "AVATAR" ||
-									header.key === "ROLE"
-										? undefined
-										: () => handleHeader(header)
-								}
-								key={header.id}
-								className={`px-4 py-3 ${header.width} cursor-pointer`}
-							>
-								{header.label}{" "}
-								{header.key === sort.keyToSort &&
-									header.sorting && (
-										<span>
-											{sort.direction === "asc"
-												? " ↑"
-												: " ↓"}
-										</span>
-									)}
-							</th>
-						))}
-					</tr>
-				</thead>
-				{isLoading ? (
-					<tbody>
+			<div className="overflow-x-auto w-full">
+				<table className="w-full table-auto md:text-sm text-xs text-left overflow-x-auto">
+					<thead className=" text-gray-700 font-semibold border-b border-neutral-100">
 						<tr>
-							<td colSpan="4" className="py-6 text-center">
-								<div className="flex flex-col items-center justify-center gap-2">
-									<Loader
-										className={
-											isLoading
-												? "h-5 w-5 animate-spin text-blue-500"
-												: ""
-										}
-									/>
-									<span className="text-sm text-gray-600">
-										Loading members...
-									</span>
-								</div>
-							</td>
+							{headers.map(header => (
+								<th
+									onClick={
+										header.key === "AVATAR" ||
+										header.key === "ROLE"
+											? undefined
+											: () => handleHeader(header)
+									}
+									key={header.id}
+									className={`px-4 py-3 ${header.width} cursor-pointer`}
+								>
+									{header.label}{" "}
+									{header.key === sort.keyToSort &&
+										header.sorting && (
+											<span>
+												{sort.direction === "asc"
+													? " ↑"
+													: " ↓"}
+											</span>
+										)}
+								</th>
+							))}
 						</tr>
-					</tbody>
-				) : (
-					<tbody className="divide-y divide-gray-100 text-gray-700 overflow-y-scroll">
-						{filterData.length > 0 ? (
-							currentMembers.map(member => (
-								<TableRow
-									key={member.login.uuid}
-									member={member}
-								/>
-							))
-						) : (
+					</thead>
+					{isLoading ? (
+						<tbody>
 							<tr>
-								<td colSpan="4" className="py-4 text-center">
-									No member found
+								<td colSpan="4" className="py-6 text-center">
+									<div className="flex flex-col items-center justify-center gap-2">
+										<Loader
+											className={
+												isLoading
+													? "h-5 w-5 animate-spin text-blue-500"
+													: ""
+											}
+										/>
+										<span className="text-sm text-gray-600">
+											Loading members...
+										</span>
+									</div>
 								</td>
 							</tr>
-						)}
-					</tbody>
-				)}
-			</table>
+						</tbody>
+					) : (
+						<tbody className="divide-y divide-gray-100 text-gray-700 overflow-y-scroll">
+							{filterData.length > 0 ? (
+								currentMembers.map(member => (
+									<TableRow
+										key={member.login.uuid}
+										member={member}
+									/>
+								))
+							) : (
+								<tr>
+									<td
+										colSpan="4"
+										className="py-4 text-center"
+									>
+										No member found
+									</td>
+								</tr>
+							)}
+						</tbody>
+					)}
+				</table>
+			</div>
 			<div className="flex justify-center items-center gap-2 mt-4">
 				<button
 					onClick={() =>

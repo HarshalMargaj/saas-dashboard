@@ -37,11 +37,14 @@ const TableNav = ({
 	}, []);
 
 	return (
-		<div className="flex justify-between items-center">
+		<div className="flex md:flex-row flex-col justify-between md:items-center">
 			<h1 className="text-3xl text-gray-700 font-bold mb-4">Members</h1>
-			<div className="flex items-center gap-4" ref={searchRef}>
-				<div className="flex items-center gap-2 text-gray-700">
-					<div>Filter by role: </div>
+			<div
+				className="flex md:flex-row flex-col items-center gap-4"
+				ref={searchRef}
+			>
+				<div className="flex  items-center gap-2  text-gray-700">
+					<div>Filter: </div>
 					<div className="relative" ref={dropdownRef}>
 						<div
 							onClick={() => setIsVisible(true)}
@@ -67,8 +70,18 @@ const TableNav = ({
 						)}
 					</div>
 				</div>
+				<div className="flex gap-2 items-center border border-neutral-100 p-2 rounded-md w-full sm:hidden">
+					<Search className="text-gray-500" size={20} />
+					<input
+						type="text"
+						placeholder="Search..."
+						className="outline-none w-full"
+						value={searchQuery}
+						onChange={e => setSearchQuery(e.target.value)}
+					/>
+				</div>
 				{isClicked ? (
-					<div className=" flex gap-2 items-center border border-neutral-100 p-2 rounded-md">
+					<div className="hidden md:flex gap-2 items-center border border-neutral-100 p-2 rounded-md">
 						<Search
 							className="text-gray-500 cursor-pointer"
 							size={20}
@@ -83,14 +96,14 @@ const TableNav = ({
 					</div>
 				) : (
 					<Search
-						className="text-gray-700 cursor-pointer"
+						className="hidden md:block text-gray-700 cursor-pointer"
 						onClick={toggleSearch}
 						size={20}
 					/>
 				)}
 				<button
 					onClick={() => setOpenModal(true)}
-					className="bg-blue-500 p-2 rounded-md text-white cursor-pointer hover:bg-blue-600"
+					className="bg-blue-500 p-2 rounded-md text-white cursor-pointer hover:bg-blue-600 md:text-sm text-xs"
 				>
 					Add Member
 				</button>
