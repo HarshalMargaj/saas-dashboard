@@ -14,7 +14,7 @@ const TableRow = ({ member }) => {
 			<td className="px-4 py-3">{member.registered.date}</td>
 			<td className="px-4 py-3">
 				<span className="px-2 py-1 text-xs bg-blue-100 text-blue-700 rounded-full">
-					Member
+					{member.role}
 				</span>
 			</td>
 		</tr>
