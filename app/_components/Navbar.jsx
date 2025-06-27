@@ -28,7 +28,7 @@ const Navbar = ({ visible, setVisible }) => {
 					<PanelRight className="cursor-pointer" />
 				)}
 			</div>
-			<div className="relative flex items-center gap-2 justify-between w-full">
+			<div className="relative flex items-center gap-2 justify-between w-full md:w-auto">
 				<img src="/dashboard.png" className="h-8 w-8 md:hidden" />
 				<Menu
 					className="md:hidden"

@@ -10,7 +10,7 @@ const Message = ({ message }) => {
 		<div
 			onMouseEnter={() => setVisible(true)}
 			onMouseLeave={() => setVisible(false)}
-			className="flex items-center justify-between py-2 px-4 border-b border-neutral-100 hover:bg-blue-50 md:text-sm text-xs"
+			className="flex items-center justify-between py-2 md:px-4 px-1 gap-2 border-b border-neutral-100 hover:bg-blue-50 md:text-sm text-xs"
 		>
 			<div className="flex items-center gap-2">
 				<img

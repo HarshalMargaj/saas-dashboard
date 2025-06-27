@@ -8,10 +8,10 @@ const Modal = ({ setOpenModal }) => {
 	useOnClickOutside(modalRef, () => setOpenModal(false));
 
 	return (
-		<div className="bg-black/20 h-full w-full absolute top-0 left-0 flex items-center justify-center">
+		<div className="bg-black/20 h-full w-full absolute top-0 left-0 flex items-center justify-center z-10">
 			<div
 				ref={modalRef}
-				className="bg-white w-[500px] h-[400px] flex items-center justify-center p-20 rounded-md"
+				className="bg-white w-[500px] h-[400px] flex items-center justify-center md:p-20 p-10 rounded-md"
 			>
 				<form
 					action=""
