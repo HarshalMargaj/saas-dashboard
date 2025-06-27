@@ -14,7 +14,10 @@ const Navbar = ({ visible, setVisible }) => {
 
 	return (
 		<div className="h-16 px-4 border-b border-neutral-200 flex items-center justify-between bg-white text-gray-700">
-			<div onClick={toggleSidebar}>
+			<div
+				onClick={toggleSidebar}
+				className="hover:bg-blue-50 rounded-md p-2"
+			>
 				{!visible ? (
 					<Sidebar className="cursor-pointer" />
 				) : (
