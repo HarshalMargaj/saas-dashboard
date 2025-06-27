@@ -5,6 +5,7 @@ import {
 	MessageCircle,
 	UserRoundCog,
 	Users,
+	
 } from "lucide-react";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -23,8 +24,8 @@ const Sidebar = ({ visible }) => {
 	return (
 		<div
 			className={`py-8 pl-4 transition-all duration-300 ease-in-out ${
-				visible ? "w-[300px]" : "w-20 flex items-center flex-col"
-			} space-y-8 `}
+				visible ? "w-[300px]" : "w-20 items-center flex-col"
+			} space-y-8 hidden md:flex md:flex-col`}
 		>
 			<h1 className="text-2xl font-bold text-blue-500">
 				{visible ? (

@@ -1,6 +1,9 @@
-import { Bell, Moon, PanelRight, Sidebar } from "lucide-react";
-import React from "react";
+"use client";
+
+import { Bell, Menu, Moon, PanelRight, Sidebar } from "lucide-react";
+import React, { useState } from "react";
 import Tooltip from "./Tooltip";
+import MobileSidebar from "./MobileSidebar";
 
 const navbarIcons = [
 	{ id: 1, icon: <Moon size={20} />, name: "Theme" },
@@ -8,6 +11,7 @@ const navbarIcons = [
 ];
 
 const Navbar = ({ visible, setVisible }) => {
+	const [menuVisible, setMenuVisible] = useState(false);
 	const toggleSidebar = () => {
 		setVisible(!visible);
 	};
@@ -16,7 +20,7 @@ const Navbar = ({ visible, setVisible }) => {
 		<div className="h-16 px-4 border-b border-neutral-200 flex items-center justify-between bg-white text-gray-700">
 			<div
 				onClick={toggleSidebar}
-				className="hover:bg-blue-50 rounded-md p-2"
+				className="hidden md:block hover:bg-blue-50 rounded-md p-2"
 			>
 				{!visible ? (
 					<Sidebar className="cursor-pointer" />
@@ -24,17 +28,29 @@ const Navbar = ({ visible, setVisible }) => {
 					<PanelRight className="cursor-pointer" />
 				)}
 			</div>
+			<div className="relative flex items-center gap-2 justify-between w-full">
+				<img src="/dashboard.png" className="h-8 w-8 md:hidden" />
+				<Menu
+					className="md:hidden"
+					onClick={() => setMenuVisible(true)}
+				/>
+				{menuVisible && (
+					<div className="bg-white absolute top-12 right-0 z-10">
+						<MobileSidebar setMenuVisible={setMenuVisible} />
+					</div>
+				)}
+			</div>
 			<div className="flex items-center gap-4">
 				{navbarIcons.map(icon => (
 					<div
 						key={icon.id}
-						className="relative group p-2 shadow-sm bg-white rounded-full cursor-pointer"
+						className="hidden md:block relative group p-2 shadow-sm bg-white rounded-full cursor-pointer"
 					>
 						{icon.icon}
 						<Tooltip label={icon.name} />
 					</div>
 				))}
-				<div className="flex gap-2 items-center">
+				<div className="md:flex gap-2 items-center hidden">
 					<div className="text-[#333333] font-semibold">Admin</div>
 					<img
 						src="https://randomuser.me/api/portraits/men/36.jpg"
