@@ -3,7 +3,7 @@ import React from "react";
 const TableRow = ({ member }) => {
 	return (
 		<tr className="hover:bg-blue-50">
-			<td className="px-4 py-3">
+			<td className="px-4 py-2">
 				<img
 					src={member.picture.large}
 					alt="avatar"

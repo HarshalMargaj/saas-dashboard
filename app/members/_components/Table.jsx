@@ -10,7 +10,9 @@ import headers from "@/constants/TableHeaders";
 const Table = () => {
 	const [members, setMembers] = useState([]);
 	const [selectedRole, setSelectedRole] = useState();
+	const [currentPage, setCurrentPage] = useState(1);
 	const roles = ["Member", "Moderator"];
+	const membersPerPage = 10;
 
 	const membersWithRole = members.map(member => ({
 		...member,
@@ -85,6 +87,15 @@ const Table = () => {
 		});
 	};
 
+	const sortedData = getSortedArray(filterData);
+
+	const indexOfLastMember = currentPage * membersPerPage;
+	const indexOfFirstMember = indexOfLastMember - membersPerPage;
+	const currentMembers = sortedData.slice(
+		indexOfFirstMember,
+		indexOfLastMember
+	);
+
 	return (
 		<div>
 			<TableNav
@@ -143,7 +154,7 @@ const Table = () => {
 				) : (
 					<tbody className="divide-y divide-gray-100 text-gray-700 overflow-y-scroll">
 						{filterData.length > 0 ? (
-							getSortedArray(filterData).map(member => (
+							currentMembers.map(member => (
 								<TableRow
 									key={member.login.uuid}
 									member={member}
@@ -151,7 +162,7 @@ const Table = () => {
 							))
 						) : (
 							<tr>
-								<td colSpan="4" className="py-6 text-center">
+								<td colSpan="4" className="py-4 text-center">
 									No member found
 								</td>
 							</tr>
@@ -159,6 +170,39 @@ const Table = () => {
 					</tbody>
 				)}
 			</table>
+			<div className="flex justify-center items-center gap-2 mt-4">
+				<button
+					onClick={() =>
+						setCurrentPage(prev => Math.max(prev - 1, 1))
+					}
+					disabled={currentPage === 1}
+					className="px-3 py-1 border rounded disabled:opacity-50"
+				>
+					Prev
+				</button>
+
+				<span className="text-sm">
+					Page {currentPage} of{" "}
+					{Math.ceil(sortedData.length / membersPerPage)}
+				</span>
+
+				<button
+					onClick={() =>
+						setCurrentPage(prev =>
+							prev < Math.ceil(sortedData.length / membersPerPage)
+								? prev + 1
+								: prev
+						)
+					}
+					disabled={
+						currentPage ===
+						Math.ceil(sortedData.length / membersPerPage)
+					}
+					className="px-3 py-1 border rounded disabled:opacity-50"
+				>
+					Next
+				</button>
+			</div>
 		</div>
 	);
 };
