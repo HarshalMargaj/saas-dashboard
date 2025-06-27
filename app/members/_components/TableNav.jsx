@@ -18,23 +18,11 @@ const TableNav = ({
 	const dropdownRef = useRef();
 
 	useOnClickOutside(dropdownRef, () => setIsVisible(false));
+	useOnClickOutside(searchRef, () => setIsClicked(false));
 
 	const toggleSearch = () => {
 		setIsClicked(true);
 	};
-
-	useEffect(() => {
-		const handleClickOutside = e => {
-			if (searchRef.current && !searchRef.current.contains(e.target)) {
-				setIsClicked(false);
-			}
-		};
-
-		document.addEventListener("mousedown", handleClickOutside);
-		return () => {
-			document.removeEventListener("mousedown", handleClickOutside);
-		};
-	}, []);
 
 	return (
 		<div className="flex md:flex-row flex-col justify-between md:items-center">
