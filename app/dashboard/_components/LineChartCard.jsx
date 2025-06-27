@@ -13,7 +13,7 @@ import { memberGrowthData } from "@/constants/charts";
 
 const LineChartCard = () => {
 	return (
-		<div className="bg-white p-4 rounded-lg shadow-md w-full">
+		<div className="bg-white  md:p-4 rounded-lg shadow-md w-full">
 			<h2 className="text-lg font-semibold mb-2 text-gray-700">
 				Member Growth This Week
 			</h2>
