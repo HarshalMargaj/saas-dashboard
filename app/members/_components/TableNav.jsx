@@ -40,7 +40,7 @@ const TableNav = ({
 		<div className="flex justify-between items-center">
 			<h1 className="text-3xl text-gray-700 font-bold mb-4">Members</h1>
 			<div className="flex items-center gap-4" ref={searchRef}>
-				<div className="flex items-center gap-2">
+				<div className="flex items-center gap-2 text-gray-700">
 					<div>Filter by role: </div>
 					<div className="relative" ref={dropdownRef}>
 						<div
