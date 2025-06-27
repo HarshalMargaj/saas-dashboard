@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Search } from "lucide-react";
 import { useOnClickOutside } from "usehooks-ts";
+import Modal from "./Modal";
 
 const TableNav = ({
 	searchQuery,
@@ -11,6 +12,7 @@ const TableNav = ({
 }) => {
 	const [isClicked, setIsClicked] = useState(false);
 	const [isVisible, setIsVisible] = useState(false);
+	const [openModal, setOpenModal] = useState(false);
 
 	const searchRef = useRef();
 	const dropdownRef = useRef();
@@ -85,9 +87,13 @@ const TableNav = ({
 						onClick={toggleSearch}
 					/>
 				)}
-				<button className="bg-blue-500 p-2 rounded-md text-white cursor-pointer">
+				<button
+					onClick={() => setOpenModal(true)}
+					className="bg-blue-500 p-2 rounded-md text-white cursor-pointer"
+				>
 					Add Member
 				</button>
+				{openModal && <Modal setOpenModal={setOpenModal} />}
 			</div>
 		</div>
 	);
