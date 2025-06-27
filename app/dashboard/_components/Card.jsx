@@ -1,5 +1,5 @@
 import React from "react";
-import { Activity } from "lucide-react";
+import { TrendingUp } from "lucide-react";
 
 const Card = ({ metric }) => {
 	return (
@@ -12,7 +12,7 @@ const Card = ({ metric }) => {
 			<div className="flex items-center justify-between">
 				<div className="text-sm">Since last month</div>
 				<div className="text-green-500 flex items-center gap-2">
-					25% <Activity />
+					25% <TrendingUp />
 				</div>
 			</div>
 		</div>

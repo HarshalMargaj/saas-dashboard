@@ -31,7 +31,7 @@ const Modal = ({ setOpenModal }) => {
 							className="outline-none border border-neutral-200 bg-neutral-100 w-full p-2 rounded-md"
 						/>
 					</div>
-					<button className="bg-blue-500 text-white p-2 w-full rounded-md cursor-pointer">
+					<button className="bg-blue-500 hover:bg-blue-600 text-white p-2 w-full rounded-md cursor-pointer">
 						Add member
 					</button>
 				</form>

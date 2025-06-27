@@ -45,7 +45,7 @@ const TableNav = ({
 					<div className="relative" ref={dropdownRef}>
 						<div
 							onClick={() => setIsVisible(true)}
-							className="border border-neutral-100 rounded-md p-2 w-[150px] "
+							className="border border-neutral-100 rounded-md p-2 w-[150px] text-gray-500"
 						>
 							{selectedRole || "Select role..."}
 						</div>
@@ -68,7 +68,7 @@ const TableNav = ({
 					</div>
 				</div>
 				{isClicked ? (
-					<div className=" flex gap-2 items-center border border-neutral-200 bg-neutral-100 p-2 rounded-md">
+					<div className=" flex gap-2 items-center border border-neutral-100 p-2 rounded-md">
 						<Search
 							className="text-gray-500 cursor-pointer"
 							size={20}
@@ -85,11 +85,12 @@ const TableNav = ({
 					<Search
 						className="text-gray-700 cursor-pointer"
 						onClick={toggleSearch}
+						size={20}
 					/>
 				)}
 				<button
 					onClick={() => setOpenModal(true)}
-					className="bg-blue-500 p-2 rounded-md text-white cursor-pointer"
+					className="bg-blue-500 p-2 rounded-md text-white cursor-pointer hover:bg-blue-600"
 				>
 					Add Member
 				</button>

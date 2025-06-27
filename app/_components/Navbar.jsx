@@ -1,4 +1,4 @@
-import { Bell, Moon, Sidebar } from "lucide-react";
+import { Bell, Moon, PanelRight, Sidebar } from "lucide-react";
 import React from "react";
 import Tooltip from "./Tooltip";
 
@@ -13,8 +13,14 @@ const Navbar = ({ visible, setVisible }) => {
 	};
 
 	return (
-		<div className="h-16 px-4 border-b border-neutral-200 flex items-center justify-between bg-white">
-			<Sidebar className="cursor-pointer" onClick={toggleSidebar} />
+		<div className="h-16 px-4 border-b border-neutral-200 flex items-center justify-between bg-white text-gray-700">
+			<div onClick={toggleSidebar}>
+				{!visible ? (
+					<Sidebar className="cursor-pointer" />
+				) : (
+					<PanelRight className="cursor-pointer" />
+				)}
+			</div>
 			<div className="flex items-center gap-4">
 				{navbarIcons.map(icon => (
 					<div
