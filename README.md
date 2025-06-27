@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Discord Server Admin Dashboard
 
-First, run the development server:
+This is a fully custom-built Discord Server Admin Dashboard built using **Next.js 14 App Router** and **Tailwind CSS**. It includes mocked features like managing members, roles, messages, and viewing server metrics — with full responsiveness and interaction.
+
+# Approach
+This project was developed from scratch based on the given task requirements:
+
+- **Next.js 14+ App Router** for routing and layout management.
+- **Tailwind CSS** for fast, utility-first styling.
+- **Lucide Icons** for modern iconography.
+- **React Hooks** for local state management (pagination, filtering, modal toggle, etc.).
+- No Redux, Zustand, or external UI libraries used — fully custom UI.
+- Mock data used for all sections (no backend or real API calls except for public mock APIs like randomuser.me).
+
+### Pages Implemented:
+
+- **Dashboard**:
+  - 5 metric cards: Total Members, Online Users, Messages Today, Active Roles, New Members This Week.
+  - Line and bar charts to display member trends (mocked).
+- **Members**:
+  - Searchable, sortable, and paginated table of users.
+  - Avatar, Username, Join Date, Role.
+  - Filter by role.
+  - Modal to add a new member (mock only).
+- **Roles**:
+  - List of roles with Tailwind-based color labels.
+  - Toggle switches for visibility.
+  - Mock input to rename a role.
+- **Messages**:
+  - List of messages with avatar, username, timestamp, content.
+  - Delete button (UI only).
+
+# Getting Started
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/HarshalMargaj/discord-server-admin-dashboard.git
+cd discord-admin-dashboard
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 2. Install Dependencies
+```bash
+npm install
+```
+### 3. Run Development Server
+```bash
+npm run dev
+```
+# Screenshots
