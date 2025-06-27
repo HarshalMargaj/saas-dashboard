@@ -1,7 +1,12 @@
 import React from "react";
+import Messages from "./_components/Messages";
 
 const page = () => {
-	return <div>messages page</div>;
+	return (
+		<div>
+			<Messages />
+		</div>
+	);
 };
 
 export default page;

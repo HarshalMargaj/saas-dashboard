@@ -1,0 +1,902 @@
+[
+	{
+		"id": 1,
+		"user": {
+			"name": "David Moore",
+			"avatar": "https://randomuser.me/api/portraits/women/85.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-21 09:37:40"
+	},
+	{
+		"id": 2,
+		"user": {
+			"name": "Alice Taylor",
+			"avatar": "https://randomuser.me/api/portraits/men/93.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-22 18:18:40"
+	},
+	{
+		"id": 3,
+		"user": {
+			"name": "David Davis",
+			"avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-23 16:26:40"
+	},
+	{
+		"id": 4,
+		"user": {
+			"name": "David Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/79.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-20 14:54:40"
+	},
+	{
+		"id": 5,
+		"user": {
+			"name": "James Miller",
+			"avatar": "https://randomuser.me/api/portraits/women/23.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-25 05:38:40"
+	},
+	{
+		"id": 6,
+		"user": {
+			"name": "Michael Moore",
+			"avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-25 07:37:40"
+	},
+	{
+		"id": 7,
+		"user": {
+			"name": "Olivia Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/9.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-26 00:55:40"
+	},
+	{
+		"id": 8,
+		"user": {
+			"name": "Olivia Johnson",
+			"avatar": "https://randomuser.me/api/portraits/men/36.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-24 03:02:40"
+	},
+	{
+		"id": 9,
+		"user": {
+			"name": "James Wilson",
+			"avatar": "https://randomuser.me/api/portraits/women/74.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-26 10:57:40"
+	},
+	{
+		"id": 10,
+		"user": {
+			"name": "David Davis",
+			"avatar": "https://randomuser.me/api/portraits/women/81.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-20 18:27:40"
+	},
+	{
+		"id": 11,
+		"user": {
+			"name": "Alice Wilson",
+			"avatar": "https://randomuser.me/api/portraits/women/74.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-24 04:58:40"
+	},
+	{
+		"id": 12,
+		"user": {
+			"name": "James Brown",
+			"avatar": "https://randomuser.me/api/portraits/women/63.jpg"
+		},
+		"message": "Pushing changes to main branch.",
+		"timestamp": "2025-06-20 11:19:40"
+	},
+	{
+		"id": 13,
+		"user": {
+			"name": "John Moore",
+			"avatar": "https://randomuser.me/api/portraits/men/9.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-22 22:48:40"
+	},
+	{
+		"id": 14,
+		"user": {
+			"name": "Robert Moore",
+			"avatar": "https://randomuser.me/api/portraits/men/52.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-23 03:02:40"
+	},
+	{
+		"id": 15,
+		"user": {
+			"name": "Linda Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/35.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-21 23:23:40"
+	},
+	{
+		"id": 16,
+		"user": {
+			"name": "Olivia Wilson",
+			"avatar": "https://randomuser.me/api/portraits/women/30.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-22 03:02:40"
+	},
+	{
+		"id": 17,
+		"user": {
+			"name": "Olivia Thomas",
+			"avatar": "https://randomuser.me/api/portraits/men/70.jpg"
+		},
+		"message": "Let's deploy the changes today.",
+		"timestamp": "2025-06-24 14:28:40"
+	},
+	{
+		"id": 18,
+		"user": {
+			"name": "Sophia Brown",
+			"avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+		},
+		"message": "Pushing changes to main branch.",
+		"timestamp": "2025-06-20 21:23:40"
+	},
+	{
+		"id": 19,
+		"user": {
+			"name": "Emily Wilson",
+			"avatar": "https://randomuser.me/api/portraits/men/51.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-24 02:33:40"
+	},
+	{
+		"id": 20,
+		"user": {
+			"name": "Robert Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/71.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-25 01:53:40"
+	},
+	{
+		"id": 21,
+		"user": {
+			"name": "John Anderson",
+			"avatar": "https://randomuser.me/api/portraits/women/85.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-24 16:43:40"
+	},
+	{
+		"id": 22,
+		"user": {
+			"name": "David Wilson",
+			"avatar": "https://randomuser.me/api/portraits/men/53.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-23 07:44:40"
+	},
+	{
+		"id": 23,
+		"user": {
+			"name": "Linda Brown",
+			"avatar": "https://randomuser.me/api/portraits/women/36.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-26 01:33:40"
+	},
+	{
+		"id": 24,
+		"user": {
+			"name": "Olivia Thomas",
+			"avatar": "https://randomuser.me/api/portraits/men/35.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-27 09:07:40"
+	},
+	{
+		"id": 25,
+		"user": {
+			"name": "James Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/93.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-21 04:01:40"
+	},
+	{
+		"id": 26,
+		"user": {
+			"name": "Olivia Brown",
+			"avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-25 22:55:40"
+	},
+	{
+		"id": 27,
+		"user": {
+			"name": "Michael Anderson",
+			"avatar": "https://randomuser.me/api/portraits/women/53.jpg"
+		},
+		"message": "Pushing changes to main branch.",
+		"timestamp": "2025-06-26 09:00:40"
+	},
+	{
+		"id": 28,
+		"user": {
+			"name": "Linda Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-27 01:59:40"
+	},
+	{
+		"id": 29,
+		"user": {
+			"name": "Sophia Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/7.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-23 04:45:40"
+	},
+	{
+		"id": 30,
+		"user": {
+			"name": "David Miller",
+			"avatar": "https://randomuser.me/api/portraits/women/84.jpg"
+		},
+		"message": "Pushing changes to main branch.",
+		"timestamp": "2025-06-26 01:09:40"
+	},
+	{
+		"id": 31,
+		"user": {
+			"name": "James Brown",
+			"avatar": "https://randomuser.me/api/portraits/men/57.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-27 04:16:40"
+	},
+	{
+		"id": 32,
+		"user": {
+			"name": "James Anderson",
+			"avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-25 05:50:40"
+	},
+	{
+		"id": 33,
+		"user": {
+			"name": "Robert Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-26 06:45:40"
+	},
+	{
+		"id": 34,
+		"user": {
+			"name": "Robert Brown",
+			"avatar": "https://randomuser.me/api/portraits/men/88.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-20 14:58:40"
+	},
+	{
+		"id": 35,
+		"user": {
+			"name": "Alice Davis",
+			"avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-25 04:25:40"
+	},
+	{
+		"id": 36,
+		"user": {
+			"name": "Linda Taylor",
+			"avatar": "https://randomuser.me/api/portraits/men/97.jpg"
+		},
+		"message": "Let's deploy the changes today.",
+		"timestamp": "2025-06-26 16:54:40"
+	},
+	{
+		"id": 37,
+		"user": {
+			"name": "Michael Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/86.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-27 08:49:40"
+	},
+	{
+		"id": 38,
+		"user": {
+			"name": "John Anderson",
+			"avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+		},
+		"message": "Pushing changes to main branch.",
+		"timestamp": "2025-06-23 15:33:40"
+	},
+	{
+		"id": 39,
+		"user": {
+			"name": "Sophia Wilson",
+			"avatar": "https://randomuser.me/api/portraits/men/80.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-20 12:52:40"
+	},
+	{
+		"id": 40,
+		"user": {
+			"name": "Olivia Moore",
+			"avatar": "https://randomuser.me/api/portraits/men/16.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-27 04:50:40"
+	},
+	{
+		"id": 41,
+		"user": {
+			"name": "Alice Brown",
+			"avatar": "https://randomuser.me/api/portraits/men/19.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-24 17:49:40"
+	},
+	{
+		"id": 42,
+		"user": {
+			"name": "David Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/45.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-25 08:03:40"
+	},
+	{
+		"id": 43,
+		"user": {
+			"name": "David Johnson",
+			"avatar": "https://randomuser.me/api/portraits/women/20.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-25 00:25:40"
+	},
+	{
+		"id": 44,
+		"user": {
+			"name": "James Davis",
+			"avatar": "https://randomuser.me/api/portraits/women/18.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-24 06:59:40"
+	},
+	{
+		"id": 45,
+		"user": {
+			"name": "Alice Thomas",
+			"avatar": "https://randomuser.me/api/portraits/men/84.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-21 18:00:40"
+	},
+	{
+		"id": 46,
+		"user": {
+			"name": "John Brown",
+			"avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-24 06:46:40"
+	},
+	{
+		"id": 47,
+		"user": {
+			"name": "Olivia Smith",
+			"avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-26 15:00:40"
+	},
+	{
+		"id": 48,
+		"user": {
+			"name": "Olivia Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/91.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-23 06:44:40"
+	},
+	{
+		"id": 49,
+		"user": {
+			"name": "David Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/87.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-21 00:21:40"
+	},
+	{
+		"id": 50,
+		"user": {
+			"name": "James Davis",
+			"avatar": "https://randomuser.me/api/portraits/men/81.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-26 01:28:40"
+	},
+	{
+		"id": 51,
+		"user": {
+			"name": "Linda Thomas",
+			"avatar": "https://randomuser.me/api/portraits/men/2.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-22 23:29:40"
+	},
+	{
+		"id": 52,
+		"user": {
+			"name": "Emily Johnson",
+			"avatar": "https://randomuser.me/api/portraits/men/60.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-24 21:31:40"
+	},
+	{
+		"id": 53,
+		"user": {
+			"name": "James Wilson",
+			"avatar": "https://randomuser.me/api/portraits/men/61.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-22 01:10:40"
+	},
+	{
+		"id": 54,
+		"user": {
+			"name": "Alice Taylor",
+			"avatar": "https://randomuser.me/api/portraits/men/44.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-24 16:08:40"
+	},
+	{
+		"id": 55,
+		"user": {
+			"name": "Robert Wilson",
+			"avatar": "https://randomuser.me/api/portraits/women/46.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-23 11:05:40"
+	},
+	{
+		"id": 56,
+		"user": {
+			"name": "James Wilson",
+			"avatar": "https://randomuser.me/api/portraits/men/57.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-26 17:58:40"
+	},
+	{
+		"id": 57,
+		"user": {
+			"name": "Alice Anderson",
+			"avatar": "https://randomuser.me/api/portraits/men/94.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-21 02:01:40"
+	},
+	{
+		"id": 58,
+		"user": {
+			"name": "David Miller",
+			"avatar": "https://randomuser.me/api/portraits/women/70.jpg"
+		},
+		"message": "Pushing changes to main branch.",
+		"timestamp": "2025-06-22 20:26:40"
+	},
+	{
+		"id": 59,
+		"user": {
+			"name": "James Anderson",
+			"avatar": "https://randomuser.me/api/portraits/women/25.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-25 20:03:40"
+	},
+	{
+		"id": 60,
+		"user": {
+			"name": "David Brown",
+			"avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-21 17:31:40"
+	},
+	{
+		"id": 61,
+		"user": {
+			"name": "Michael Miller",
+			"avatar": "https://randomuser.me/api/portraits/women/9.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-23 02:54:40"
+	},
+	{
+		"id": 62,
+		"user": {
+			"name": "Emily Anderson",
+			"avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-21 03:56:40"
+	},
+	{
+		"id": 63,
+		"user": {
+			"name": "David Anderson",
+			"avatar": "https://randomuser.me/api/portraits/women/54.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-24 21:11:40"
+	},
+	{
+		"id": 64,
+		"user": {
+			"name": "David Moore",
+			"avatar": "https://randomuser.me/api/portraits/women/83.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-22 01:31:40"
+	},
+	{
+		"id": 65,
+		"user": {
+			"name": "Robert Taylor",
+			"avatar": "https://randomuser.me/api/portraits/men/91.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-21 07:44:40"
+	},
+	{
+		"id": 66,
+		"user": {
+			"name": "Alice Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/54.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-23 05:17:40"
+	},
+	{
+		"id": 67,
+		"user": {
+			"name": "Alice Smith",
+			"avatar": "https://randomuser.me/api/portraits/men/71.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-21 11:49:40"
+	},
+	{
+		"id": 68,
+		"user": {
+			"name": "John Thomas",
+			"avatar": "https://randomuser.me/api/portraits/women/70.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-25 06:49:40"
+	},
+	{
+		"id": 69,
+		"user": {
+			"name": "Linda Moore",
+			"avatar": "https://randomuser.me/api/portraits/men/6.jpg"
+		},
+		"message": "Let's deploy the changes today.",
+		"timestamp": "2025-06-22 10:58:40"
+	},
+	{
+		"id": 70,
+		"user": {
+			"name": "Alice Davis",
+			"avatar": "https://randomuser.me/api/portraits/women/34.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-24 02:24:40"
+	},
+	{
+		"id": 71,
+		"user": {
+			"name": "Emily Taylor",
+			"avatar": "https://randomuser.me/api/portraits/men/8.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-23 00:41:40"
+	},
+	{
+		"id": 72,
+		"user": {
+			"name": "Linda Johnson",
+			"avatar": "https://randomuser.me/api/portraits/men/51.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-23 06:40:40"
+	},
+	{
+		"id": 73,
+		"user": {
+			"name": "Robert Johnson",
+			"avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-22 03:58:40"
+	},
+	{
+		"id": 74,
+		"user": {
+			"name": "Olivia Brown",
+			"avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-23 08:49:40"
+	},
+	{
+		"id": 75,
+		"user": {
+			"name": "Emily Smith",
+			"avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-25 21:00:40"
+	},
+	{
+		"id": 76,
+		"user": {
+			"name": "David Brown",
+			"avatar": "https://randomuser.me/api/portraits/women/86.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-23 14:35:40"
+	},
+	{
+		"id": 77,
+		"user": {
+			"name": "Olivia Smith",
+			"avatar": "https://randomuser.me/api/portraits/women/29.jpg"
+		},
+		"message": "Welcome our new team member!",
+		"timestamp": "2025-06-26 04:06:40"
+	},
+	{
+		"id": 78,
+		"user": {
+			"name": "Emily Brown",
+			"avatar": "https://randomuser.me/api/portraits/women/44.jpg"
+		},
+		"message": "Pushing changes to main branch.",
+		"timestamp": "2025-06-23 08:51:40"
+	},
+	{
+		"id": 79,
+		"user": {
+			"name": "Emily Taylor",
+			"avatar": "https://randomuser.me/api/portraits/men/68.jpg"
+		},
+		"message": "Anyone up for a quick sync?",
+		"timestamp": "2025-06-24 08:35:40"
+	},
+	{
+		"id": 80,
+		"user": {
+			"name": "Alice Thomas",
+			"avatar": "https://randomuser.me/api/portraits/women/54.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-21 08:18:40"
+	},
+	{
+		"id": 81,
+		"user": {
+			"name": "Michael Thomas",
+			"avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-21 20:38:40"
+	},
+	{
+		"id": 82,
+		"user": {
+			"name": "Michael Anderson",
+			"avatar": "https://randomuser.me/api/portraits/men/16.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-25 13:32:40"
+	},
+	{
+		"id": 83,
+		"user": {
+			"name": "Linda Wilson",
+			"avatar": "https://randomuser.me/api/portraits/men/56.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-23 06:14:40"
+	},
+	{
+		"id": 84,
+		"user": {
+			"name": "James Anderson",
+			"avatar": "https://randomuser.me/api/portraits/men/93.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-26 06:43:40"
+	},
+	{
+		"id": 85,
+		"user": {
+			"name": "Olivia Johnson",
+			"avatar": "https://randomuser.me/api/portraits/women/7.jpg"
+		},
+		"message": "Let's deploy the changes today.",
+		"timestamp": "2025-06-26 16:39:40"
+	},
+	{
+		"id": 86,
+		"user": {
+			"name": "James Miller",
+			"avatar": "https://randomuser.me/api/portraits/women/33.jpg"
+		},
+		"message": "Let's deploy the changes today.",
+		"timestamp": "2025-06-25 14:07:40"
+	},
+	{
+		"id": 87,
+		"user": {
+			"name": "Linda Davis",
+			"avatar": "https://randomuser.me/api/portraits/men/86.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-26 05:01:40"
+	},
+	{
+		"id": 88,
+		"user": {
+			"name": "Olivia Taylor",
+			"avatar": "https://randomuser.me/api/portraits/men/94.jpg"
+		},
+		"message": "Let's deploy the changes today.",
+		"timestamp": "2025-06-25 11:16:40"
+	},
+	{
+		"id": 89,
+		"user": {
+			"name": "Linda Brown",
+			"avatar": "https://randomuser.me/api/portraits/men/61.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-22 01:29:40"
+	},
+	{
+		"id": 90,
+		"user": {
+			"name": "Alice Anderson",
+			"avatar": "https://randomuser.me/api/portraits/women/44.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-26 16:03:40"
+	},
+	{
+		"id": 91,
+		"user": {
+			"name": "Linda Wilson",
+			"avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-23 03:33:40"
+	},
+	{
+		"id": 92,
+		"user": {
+			"name": "David Smith",
+			"avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+		},
+		"message": "The bug has been fixed!",
+		"timestamp": "2025-06-23 19:11:40"
+	},
+	{
+		"id": 93,
+		"user": {
+			"name": "Robert Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+		},
+		"message": "Hey, how's the project going?",
+		"timestamp": "2025-06-26 06:35:40"
+	},
+	{
+		"id": 94,
+		"user": {
+			"name": "Sophia Moore",
+			"avatar": "https://randomuser.me/api/portraits/men/43.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-21 19:20:40"
+	},
+	{
+		"id": 95,
+		"user": {
+			"name": "Michael Thomas",
+			"avatar": "https://randomuser.me/api/portraits/men/20.jpg"
+		},
+		"message": "Don't forget the meeting at 3 PM.",
+		"timestamp": "2025-06-25 06:19:40"
+	},
+	{
+		"id": 96,
+		"user": {
+			"name": "Alice Thomas",
+			"avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-23 17:16:40"
+	},
+	{
+		"id": 97,
+		"user": {
+			"name": "James Wilson",
+			"avatar": "https://randomuser.me/api/portraits/men/87.jpg"
+		},
+		"message": "Reminder: Standup in 10 mins.",
+		"timestamp": "2025-06-26 15:27:40"
+	},
+	{
+		"id": 98,
+		"user": {
+			"name": "Linda Johnson",
+			"avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+		},
+		"message": "Let's deploy the changes today.",
+		"timestamp": "2025-06-24 09:45:40"
+	},
+	{
+		"id": 99,
+		"user": {
+			"name": "Emily Anderson",
+			"avatar": "https://randomuser.me/api/portraits/men/37.jpg"
+		},
+		"message": "Heads up, system maintenance tonight.",
+		"timestamp": "2025-06-21 19:47:40"
+	},
+	{
+		"id": 100,
+		"user": {
+			"name": "Michael Taylor",
+			"avatar": "https://randomuser.me/api/portraits/women/96.jpg"
+		},
+		"message": "Can someone review my PR?",
+		"timestamp": "2025-06-22 23:37:40"
+	}
+]
