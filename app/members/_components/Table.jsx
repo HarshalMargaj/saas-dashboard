@@ -117,7 +117,7 @@ const Table = () => {
 										: () => handleHeader(header)
 								}
 								key={header.id}
-								className="px-4 py-3 w-[300px] cursor-pointer"
+								className={`px-4 py-3 ${header.width} cursor-pointer`}
 							>
 								{header.label}{" "}
 								{header.key === sort.keyToSort &&
