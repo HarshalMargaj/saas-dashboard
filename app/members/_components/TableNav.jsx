@@ -1,10 +1,21 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Search } from "lucide-react";
+import { useOnClickOutside } from "usehooks-ts";
 
-const TableNav = ({ searchQuery, setSearchQuery }) => {
+const TableNav = ({
+	searchQuery,
+	setSearchQuery,
+	selectedRole,
+	setSelectedRole,
+	roles,
+}) => {
 	const [isClicked, setIsClicked] = useState(false);
+	const [isVisible, setIsVisible] = useState(false);
 
 	const searchRef = useRef();
+	const dropdownRef = useRef();
+
+	useOnClickOutside(dropdownRef, () => setIsVisible(false));
 
 	const toggleSearch = () => {
 		setIsClicked(true);
@@ -27,6 +38,33 @@ const TableNav = ({ searchQuery, setSearchQuery }) => {
 		<div className="flex justify-between items-center">
 			<h1 className="text-3xl text-gray-700 font-bold mb-4">Members</h1>
 			<div className="flex items-center gap-4" ref={searchRef}>
+				<div className="flex items-center gap-2">
+					<div>Filter by role: </div>
+					<div className="relative" ref={dropdownRef}>
+						<div
+							onClick={() => setIsVisible(true)}
+							className="border border-neutral-100 rounded-md p-2 w-[150px] "
+						>
+							{selectedRole || "Select role..."}
+						</div>
+						{isVisible && (
+							<div className="shadow-md border border-neutral-100 p-2 absolute bg-white w-full top-12 rounded-md z-10">
+								{roles.map((role, index) => (
+									<div
+										key={index}
+										onClick={() => {
+											setSelectedRole(role);
+											setIsVisible(false);
+										}}
+										className="hover:bg-blue-100 rounded-md p-2 hover:text-blue-600 cursor-pointer"
+									>
+										{role}
+									</div>
+								))}
+							</div>
+						)}
+					</div>
+				</div>
 				{isClicked ? (
 					<div className=" flex gap-2 items-center border border-neutral-200 bg-neutral-100 p-2 rounded-md">
 						<Search

@@ -9,6 +9,7 @@ import headers from "@/constants/TableHeaders";
 
 const Table = () => {
 	const [members, setMembers] = useState([]);
+	const [selectedRole, setSelectedRole] = useState();
 	const roles = ["Member", "Moderator"];
 
 	const membersWithRole = members.map(member => ({
@@ -54,7 +55,11 @@ const Table = () => {
 		fetchApi();
 	}, []);
 
-	const filterData = membersWithRole.filter(member =>
+	const filterByRole = selectedRole
+		? membersWithRole.filter(member => selectedRole === member.role)
+		: membersWithRole;
+
+	const filterData = filterByRole.filter(member =>
 		`${member.name.first} ${member.name.last}`
 			.toLowerCase()
 			.includes(searchQuery.toLowerCase())
@@ -85,6 +90,9 @@ const Table = () => {
 			<TableNav
 				searchQuery={searchQuery}
 				setSearchQuery={setSearchQuery}
+				selectedRole={selectedRole}
+				setSelectedRole={setSelectedRole}
+				roles={roles}
 			/>
 			<table className="min-w-full table-auto text-sm text-left">
 				<thead className=" text-gray-700 font-semibold border-b border-neutral-100">
@@ -94,11 +102,11 @@ const Table = () => {
 								onClick={
 									header.key === "AVATAR" ||
 									header.key === "ROLE"
-										? "undefined"
+										? undefined
 										: () => handleHeader(header)
 								}
 								key={header.id}
-								className="px-4 py-3 w-[300px]"
+								className="px-4 py-3 w-[300px] cursor-pointer"
 							>
 								{header.label}{" "}
 								{header.key === sort.keyToSort &&
