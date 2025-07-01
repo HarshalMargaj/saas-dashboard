@@ -3,14 +3,15 @@
 import {
 	LayoutDashboard,
 	MessageCircle,
+	Table2,
 	UserRoundCog,
 	Users,
-	
 } from "lucide-react";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
 const items = [
+	{ id: 5, name: "Spreadsheet", icon: <Table2 />, path: "/spreadsheet" },
 	{ id: 1, name: "Dashboard", icon: <LayoutDashboard />, path: "/dashboard" },
 	{ id: 2, name: "Members", icon: <Users />, path: "/members" },
 	{ id: 3, name: "Roles", icon: <UserRoundCog />, path: "/roles" },
