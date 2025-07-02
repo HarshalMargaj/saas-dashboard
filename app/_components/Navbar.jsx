@@ -10,14 +10,14 @@ const navbarIcons = [
 	{ id: 2, icon: <Bell size={20} />, name: "Notifications" },
 ];
 
-const Navbar = ({ visible, setVisible }) => {
+const Navbar = ({ visible, setVisible, toggleTheme, theme }) => {
 	const [menuVisible, setMenuVisible] = useState(false);
 	const toggleSidebar = () => {
 		setVisible(!visible);
 	};
 
 	return (
-		<div className="h-16 px-4 border-b border-neutral-200 flex items-center justify-between bg-white text-gray-700">
+		<div className="h-16 px-4 border-b border-neutral-200 flex items-center justify-between bg-white text-gray-700 dark:bg-black">
 			<div
 				onClick={toggleSidebar}
 				className="hidden md:block hover:bg-blue-50 rounded-md p-2"
@@ -41,15 +41,15 @@ const Navbar = ({ visible, setVisible }) => {
 				)}
 			</div>
 			<div className="flex items-center gap-4">
-				{navbarIcons.map(icon => (
-					<div
-						key={icon.id}
-						className="hidden md:block relative group p-2 shadow-sm bg-white rounded-full cursor-pointer"
-					>
-						{icon.icon}
-						<Tooltip label={icon.name} />
-					</div>
-				))}
+				<div
+					className={`hidden md:block relative group p-2 shadow-sm  rounded-full cursor-pointer ${
+						theme === "light" ? "bg-white" : "bg-green-600"
+					}`}
+				>
+					<Moon size={20} onClick={toggleTheme} />
+					<Tooltip label={"Theme"} />
+				</div>
+
 				<div className="md:flex gap-2 items-center hidden">
 					<div className="text-[#333333] font-semibold">Admin</div>
 					<img
